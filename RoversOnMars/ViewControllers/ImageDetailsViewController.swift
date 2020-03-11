@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ImageDetailsViewController.swift
 //  RoversOnMars
 //
 //  Created by mohammed abdulla kadib on 3/11/20.
@@ -8,15 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController, Storyboarded {
+class ImageDetailsViewController: UIViewController, Storyboarded {
+    
+    
+    
+    @IBOutlet weak var marsDetailImageView: UIImageView!
+    
     
     weak var coordinator: Coordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        
+    }
+    
+
+    
 
 }
-
