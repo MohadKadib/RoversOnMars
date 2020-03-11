@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C59892B92419626600E35D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892B82419626600E35D05 /* AppDelegate.swift */; };
+		C59892BB2419626600E35D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892BA2419626600E35D05 /* SceneDelegate.swift */; };
+		C59892BD2419626600E35D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892BC2419626600E35D05 /* ViewController.swift */; };
+		C59892C02419626600E35D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59892BE2419626600E35D05 /* Main.storyboard */; };
+		C59892C22419626800E35D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59892C12419626800E35D05 /* Assets.xcassets */; };
+		C59892C52419626800E35D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59892C32419626800E35D05 /* LaunchScreen.storyboard */; };
+		C59892D02419626800E35D05 /* RoversOnMarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892CF2419626800E35D05 /* RoversOnMarsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C59892CC2419626800E35D05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C59892AD2419626600E35D05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C59892B42419626600E35D05;
+			remoteInfo = RoversOnMars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C59892B52419626600E35D05 /* RoversOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoversOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59892B82419626600E35D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C59892BA2419626600E35D05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C59892BC2419626600E35D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C59892BF2419626600E35D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C59892C12419626800E35D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C59892C42419626800E35D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C59892C62419626800E35D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59892CB2419626800E35D05 /* RoversOnMarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoversOnMarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59892CF2419626800E35D05 /* RoversOnMarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversOnMarsTests.swift; sourceTree = "<group>"; };
+		C59892D12419626800E35D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C59892B22419626600E35D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59892C82419626800E35D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C59892AC2419626600E35D05 = {
+			isa = PBXGroup;
+			children = (
+				C59892B72419626600E35D05 /* RoversOnMars */,
+				C59892CE2419626800E35D05 /* RoversOnMarsTests */,
+				C59892B62419626600E35D05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C59892B62419626600E35D05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C59892B52419626600E35D05 /* RoversOnMars.app */,
+				C59892CB2419626800E35D05 /* RoversOnMarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C59892B72419626600E35D05 /* RoversOnMars */ = {
+			isa = PBXGroup;
+			children = (
+				C59892B82419626600E35D05 /* AppDelegate.swift */,
+				C59892BA2419626600E35D05 /* SceneDelegate.swift */,
+				C59892BC2419626600E35D05 /* ViewController.swift */,
+				C59892BE2419626600E35D05 /* Main.storyboard */,
+				C59892C12419626800E35D05 /* Assets.xcassets */,
+				C59892C32419626800E35D05 /* LaunchScreen.storyboard */,
+				C59892C62419626800E35D05 /* Info.plist */,
+			);
+			path = RoversOnMars;
+			sourceTree = "<group>";
+		};
+		C59892CE2419626800E35D05 /* RoversOnMarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C59892CF2419626800E35D05 /* RoversOnMarsTests.swift */,
+				C59892D12419626800E35D05 /* Info.plist */,
+			);
+			path = RoversOnMarsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C59892B42419626600E35D05 /* RoversOnMars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C59892D42419626800E35D05 /* Build configuration list for PBXNativeTarget "RoversOnMars" */;
+			buildPhases = (
+				C59892B12419626600E35D05 /* Sources */,
+				C59892B22419626600E35D05 /* Frameworks */,
+				C59892B32419626600E35D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoversOnMars;
+			productName = RoversOnMars;
+			productReference = C59892B52419626600E35D05 /* RoversOnMars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C59892CA2419626800E35D05 /* RoversOnMarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C59892D72419626800E35D05 /* Build configuration list for PBXNativeTarget "RoversOnMarsTests" */;
+			buildPhases = (
+				C59892C72419626800E35D05 /* Sources */,
+				C59892C82419626800E35D05 /* Frameworks */,
+				C59892C92419626800E35D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C59892CD2419626800E35D05 /* PBXTargetDependency */,
+			);
+			name = RoversOnMarsTests;
+			productName = RoversOnMarsTests;
+			productReference = C59892CB2419626800E35D05 /* RoversOnMarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C59892AD2419626600E35D05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "mohammed abdulla kadib";
+				TargetAttributes = {
+					C59892B42419626600E35D05 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C59892CA2419626800E35D05 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C59892B42419626600E35D05;
+					};
+				};
+			};
+			buildConfigurationList = C59892B02419626600E35D05 /* Build configuration list for PBXProject "RoversOnMars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C59892AC2419626600E35D05;
+			productRefGroup = C59892B62419626600E35D05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C59892B42419626600E35D05 /* RoversOnMars */,
+				C59892CA2419626800E35D05 /* RoversOnMarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C59892B32419626600E35D05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59892C52419626800E35D05 /* LaunchScreen.storyboard in Resources */,
+				C59892C22419626800E35D05 /* Assets.xcassets in Resources */,
+				C59892C02419626600E35D05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59892C92419626800E35D05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C59892B12419626600E35D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59892BD2419626600E35D05 /* ViewController.swift in Sources */,
+				C59892B92419626600E35D05 /* AppDelegate.swift in Sources */,
+				C59892BB2419626600E35D05 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59892C72419626800E35D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59892D02419626800E35D05 /* RoversOnMarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C59892CD2419626800E35D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C59892B42419626600E35D05 /* RoversOnMars */;
+			targetProxy = C59892CC2419626800E35D05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C59892BE2419626600E35D05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C59892BF2419626600E35D05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C59892C32419626800E35D05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C59892C42419626800E35D05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C59892D22419626800E35D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C59892D32419626800E35D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C59892D52419626800E35D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SABHXTBXAP;
+				INFOPLIST_FILE = RoversOnMars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohadkadib.RoversOnMars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C59892D62419626800E35D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SABHXTBXAP;
+				INFOPLIST_FILE = RoversOnMars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohadkadib.RoversOnMars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C59892D82419626800E35D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SABHXTBXAP;
+				INFOPLIST_FILE = RoversOnMarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohadkadib.RoversOnMarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoversOnMars.app/RoversOnMars";
+			};
+			name = Debug;
+		};
+		C59892D92419626800E35D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SABHXTBXAP;
+				INFOPLIST_FILE = RoversOnMarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohadkadib.RoversOnMarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoversOnMars.app/RoversOnMars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C59892B02419626600E35D05 /* Build configuration list for PBXProject "RoversOnMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59892D22419626800E35D05 /* Debug */,
+				C59892D32419626800E35D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C59892D42419626800E35D05 /* Build configuration list for PBXNativeTarget "RoversOnMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59892D52419626800E35D05 /* Debug */,
+				C59892D62419626800E35D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C59892D72419626800E35D05 /* Build configuration list for PBXNativeTarget "RoversOnMarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59892D82419626800E35D05 /* Debug */,
+				C59892D92419626800E35D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C59892AD2419626600E35D05 /* Project object */;
+}
