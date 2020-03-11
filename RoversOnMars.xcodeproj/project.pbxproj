@@ -14,6 +14,9 @@
 		C59892C22419626800E35D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59892C12419626800E35D05 /* Assets.xcassets */; };
 		C59892C52419626800E35D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59892C32419626800E35D05 /* LaunchScreen.storyboard */; };
 		C59892D02419626800E35D05 /* RoversOnMarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892CF2419626800E35D05 /* RoversOnMarsTests.swift */; };
+		C59892DD2419636600E35D05 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892DC2419636600E35D05 /* Coordinator.swift */; };
+		C59892DF241963E400E35D05 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892DE241963E400E35D05 /* Storyboarded.swift */; };
+		C59892E124196A3000E35D05 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59892E024196A3000E35D05 /* ImageDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		C59892CB2419626800E35D05 /* RoversOnMarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoversOnMarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59892CF2419626800E35D05 /* RoversOnMarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversOnMarsTests.swift; sourceTree = "<group>"; };
 		C59892D12419626800E35D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59892DC2419636600E35D05 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C59892DE241963E400E35D05 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		C59892E024196A3000E35D05 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +87,14 @@
 			children = (
 				C59892B82419626600E35D05 /* AppDelegate.swift */,
 				C59892BA2419626600E35D05 /* SceneDelegate.swift */,
+				C59892E024196A3000E35D05 /* ImageDetailsViewController.swift */,
 				C59892BC2419626600E35D05 /* ViewController.swift */,
 				C59892BE2419626600E35D05 /* Main.storyboard */,
 				C59892C12419626800E35D05 /* Assets.xcassets */,
 				C59892C32419626800E35D05 /* LaunchScreen.storyboard */,
 				C59892C62419626800E35D05 /* Info.plist */,
+				C59892DC2419636600E35D05 /* Coordinator.swift */,
+				C59892DE241963E400E35D05 /* Storyboarded.swift */,
 			);
 			path = RoversOnMars;
 			sourceTree = "<group>";
@@ -200,7 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59892E124196A3000E35D05 /* ImageDetailsViewController.swift in Sources */,
+				C59892DD2419636600E35D05 /* Coordinator.swift in Sources */,
 				C59892BD2419626600E35D05 /* ViewController.swift in Sources */,
+				C59892DF241963E400E35D05 /* Storyboarded.swift in Sources */,
 				C59892B92419626600E35D05 /* AppDelegate.swift in Sources */,
 				C59892BB2419626600E35D05 /* SceneDelegate.swift in Sources */,
 			);
