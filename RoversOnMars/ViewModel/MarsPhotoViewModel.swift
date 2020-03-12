@@ -29,6 +29,13 @@ struct MarsPhotoViewModel {
         return marsPhoto.img_src
     }
     
+    var displayLaunchDate: String {
+        return marsPhoto.rover.launch_date
+    }
+    
+    var displayLandDate: String {
+        return marsPhoto.rover.landing_date
+    }
     
     
     init(marsPhoto: Photo) {

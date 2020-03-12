@@ -23,9 +23,6 @@ class MarsService: MarsServiceProtocol {
         
         return Observable.create { (observer) -> Disposable in
             
-            
-            
-            
             let task = URLSession.shared.dataTask(with: URL(string: self.apiString)!) { (data, _, _) in
 
                 guard let Mydata = data else {

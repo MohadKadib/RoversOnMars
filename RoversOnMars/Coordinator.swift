@@ -8,12 +8,17 @@
 
 
 import UIKit
+import SDWebImage
 
 class Coordinator {
     
     var navigatoinController: UINavigationController
     
+    
     init(navigatoinController: UINavigationController) {
+        
+        navigatoinController.navigationBar.barTintColor = UIColor.orange
+        navigatoinController.navigationBar.tintColor = UIColor.white
         
         self.navigatoinController = navigatoinController
         
@@ -27,12 +32,18 @@ class Coordinator {
         
     }
     
-    func goToImageDetail() {
+    func goToImageDetail(imageSource: String, myLaunchDate: String, myLandDate: String, myRoverName: String) {
         
         let vc = ImageDetailsViewController.instantiate()
+        
         vc.coordinator = self
         navigatoinController.pushViewController(vc, animated: true)
-        
+//        vc.viewDidLoad()
+        vc.land = myLandDate
+        vc.launch = myLaunchDate
+        vc.rover = myRoverName
+        vc.image = imageSource
+
     }
     
     

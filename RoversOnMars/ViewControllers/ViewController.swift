@@ -11,7 +11,10 @@ import RxSwift
 import RxCocoa
 import SDWebImage
 
-class ViewController: UIViewController, Storyboarded {
+class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
+    
+    @IBOutlet weak var selectRover: UISegmentedControl!
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,8 +26,24 @@ class ViewController: UIViewController, Storyboarded {
     
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        
         viewModel = MarsListViewModel()
+        
+        bindDateToTable()
+        
+        
+        
+    }
+    
+    
+    //MARK: - Data Binding Functions
+    
+    func bindDateToTable() {
+        
         viewModel.fetchMarsPhotoViewModels().observeOn(MainScheduler.instance).bind(to:
         tableView.rx.items(cellIdentifier: "cell")) { index, viewModel, cell in
             let marsCell = cell as! TableViewCell
@@ -36,7 +55,29 @@ class ViewController: UIViewController, Storyboarded {
             
         }.disposed(by: disposeBag)
         
+        tableView.rx.modelSelected(MarsPhotoViewModel.self).subscribe(onNext: { (viewModel) in
+            
+            
+            print(viewModel.displayCameraName)
+            self.coordinator?.goToImageDetail(imageSource: viewModel.displayImage, myLaunchDate: viewModel.displayLaunchDate, myLandDate: viewModel.displayLandDate, myRoverName: viewModel.displayRoverName)
+            
+        
+            
+        }).disposed(by: disposeBag)
+        
+        
     }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 }
