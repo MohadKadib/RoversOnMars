@@ -58,7 +58,6 @@ class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
         tableView.rx.modelSelected(MarsPhotoViewModel.self).subscribe(onNext: { (viewModel) in
             
             
-            print(viewModel.displayCameraName)
             self.coordinator?.goToImageDetail(imageSource: viewModel.displayImage, myLaunchDate: viewModel.displayLaunchDate, myLandDate: viewModel.displayLandDate, myRoverName: viewModel.displayRoverName)
             
         

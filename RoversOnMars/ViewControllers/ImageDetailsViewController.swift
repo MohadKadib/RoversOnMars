@@ -38,9 +38,9 @@ class ImageDetailsViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         
 
-        roverName.text = rover
-        lunchDate.text = launch
-        landDate.text = land
+        roverName.text = "Rover Name: " + rover
+        lunchDate.text = "Rover Launching Date: " + launch
+        landDate.text = "Rover Landing Date: " + land
         
         
         marsDetailImageView.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "mars.png") )
