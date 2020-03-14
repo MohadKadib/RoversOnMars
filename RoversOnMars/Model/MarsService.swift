@@ -15,7 +15,9 @@ protocol MarsServiceProtocol {
 
 class MarsService: MarsServiceProtocol {
     
-    var apiString = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY"
+    let apiString1 = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY"
+    
+    let apiString2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=DEMO_KEY"
     
     
     //Function to fetch the photos from the API and return them as an observableObject
@@ -23,8 +25,9 @@ class MarsService: MarsServiceProtocol {
         
         return Observable.create { (observer) -> Disposable in
             
-            let task = URLSession.shared.dataTask(with: URL(string: self.apiString)!) { (data, _, _) in
-
+            let task1 = URLSession.shared.dataTask(with:URL(string: self.apiString1)!) { (data, _, _) in
+                
+                
                 guard let Mydata = data else {
                     observer.onError(NSError(domain: "", code: -1, userInfo: nil))
                     return
@@ -42,10 +45,10 @@ class MarsService: MarsServiceProtocol {
                 
             }
             
-            task.resume()
+            task1.resume()
             
             return Disposables.create{
-                task.cancel()
+                task1.cancel()
             }
             
         }
