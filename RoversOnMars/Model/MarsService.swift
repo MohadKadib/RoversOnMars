@@ -8,17 +8,24 @@
 
 
 import RxSwift
+import Alamofire
 
 protocol MarsServiceProtocol {
+    
     func fetchMarsPhotos() -> Observable<[Photo]>
+    
 }
+
 
 class MarsService: MarsServiceProtocol {
     
     let apiString1 = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY"
     
-    let apiString2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=DEMO_KEY"
+    let apiString2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=1000&api_key=DEMO_KEY"
     
+    let apiString3 = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=1000&api_key=DEMO_KEY"
+    
+    var marsPhotos = [Photo]()
     
     //Function to fetch the photos from the API and return them as an observableObject
     func fetchMarsPhotos() -> Observable<[Photo]> {
@@ -36,8 +43,49 @@ class MarsService: MarsServiceProtocol {
                 do {
                     
                     let tempMarsPhotos = try JSONDecoder().decode(MarsPhotoCollection.self, from: Mydata)
-                    let marsPhotos = tempMarsPhotos.photos
-                    observer.onNext(marsPhotos)
+                    self.marsPhotos.append(contentsOf: tempMarsPhotos.photos)
+                    observer.onNext(self.marsPhotos)
+                    
+                } catch {
+                    observer.onError(error)
+                }
+                
+            }
+            
+            
+            let task2 = URLSession.shared.dataTask(with:URL(string: self.apiString2)!) { (data, _, _) in
+                
+                
+                guard let Mydata = data else {
+                    observer.onError(NSError(domain: "", code: -1, userInfo: nil))
+                    return
+                }
+                
+                do {
+                    
+                    let tempMarsPhotos = try JSONDecoder().decode(MarsPhotoCollection.self, from: Mydata)
+                    self.marsPhotos.append(contentsOf: tempMarsPhotos.photos)
+                    observer.onNext(self.marsPhotos)
+                    
+                } catch {
+                    observer.onError(error)
+                }
+                
+            }
+            
+            let task3 = URLSession.shared.dataTask(with:URL(string: self.apiString3)!) { (data, _, _) in
+                
+                
+                guard let Mydata = data else {
+                    observer.onError(NSError(domain: "", code: -1, userInfo: nil))
+                    return
+                }
+                
+                do {
+                    
+                    let tempMarsPhotos = try JSONDecoder().decode(MarsPhotoCollection.self, from: Mydata)
+                    self.marsPhotos.append(contentsOf: tempMarsPhotos.photos)
+                    observer.onNext(self.marsPhotos)
                     
                 } catch {
                     observer.onError(error)
@@ -46,9 +94,15 @@ class MarsService: MarsServiceProtocol {
             }
             
             task1.resume()
+            task2.resume()
+            task3.resume()
+            
+            
             
             return Disposables.create{
                 task1.cancel()
+                task2.cancel()
+                task3.cancel()
             }
             
         }

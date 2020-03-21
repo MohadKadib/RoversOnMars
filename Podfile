@@ -9,7 +9,7 @@ target 'RoversOnMars' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SDWebImage', '~> 5.0'
-
+  pod 'Alamofire', '~> 5.0'
   
 
 end

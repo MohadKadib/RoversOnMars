@@ -111,10 +111,10 @@
 				C5F76D8A241970F70050D243 /* ViewModel */,
 				C5F76D85241970AB0050D243 /* Model */,
 				C59892C12419626800E35D05 /* Assets.xcassets */,
-				C59892C32419626800E35D05 /* LaunchScreen.storyboard */,
-				C59892C62419626800E35D05 /* Info.plist */,
 				C59892DC2419636600E35D05 /* Coordinator.swift */,
 				C59892DE241963E400E35D05 /* Storyboarded.swift */,
+				C59892C32419626800E35D05 /* LaunchScreen.storyboard */,
+				C59892C62419626800E35D05 /* Info.plist */,
 			);
 			path = RoversOnMars;
 			sourceTree = "<group>";
@@ -150,8 +150,8 @@
 		C5F76D8B241972420050D243 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C59892E024196A3000E35D05 /* ImageDetailsViewController.swift */,
 				C59892BC2419626600E35D05 /* ViewController.swift */,
+				C59892E024196A3000E35D05 /* ImageDetailsViewController.swift */,
 				C5F76D8C24197BE90050D243 /* TableViewCell.swift */,
 			);
 			path = ViewControllers;
