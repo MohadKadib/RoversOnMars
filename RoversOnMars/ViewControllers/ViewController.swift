@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
     
     private var viewModel: MarsListViewModel!
     
+   
+    
     var fetchingMore = false
     
     override func viewDidLoad() {
@@ -34,7 +36,8 @@ class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
         
         viewModel = MarsListViewModel()
         
-        bindDateToTable()
+        let list = bindDateToTable()
+        
         
         
         
@@ -43,32 +46,34 @@ class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
     
     //MARK: - Data Binding Functions
     
-    func bindDateToTable() {
+    func bindDateToTable() -> Observable<[MarsPhotoViewModel]> {
         
-        var list = viewModel.fetchMarsPhotoViewModels()
+        let list = viewModel.fetchMarsPhotoViewModels()
         list.observeOn(MainScheduler.instance).bind(to:
             
             tableView.rx.items(cellIdentifier: "cell")) { index, viewModel, cell in
                 
-//            self.selectRover.rx.selectedSegmentIndex.subscribe (onNext: { index1 in
+//                self.selectRover.rx.selectedSegmentIndex.subscribe (onNext: { index1 in
+//                    print(index1)
 //
-//                list.asObservable().filter { value in
-//                    switch index1 {
-//                    case 0:
-//                        return value[index].displayRoverName == "Curiosity"
-//                    case 1:
-//                        return value[index].displayRoverName == "Opportunity"
-//                    case 2:
-//                        return value[index].displayRoverName == "Spirit"
-//                    default:
-//                        return true
+//                    list.asObservable().filter { value in
+//                        switch index1 {
+//                        case 0:
+//                            return value[index].displayRoverName == "Curiosity"
+//                        case 1:
+//                            return value[index].displayRoverName == "Opportunity"
+//                        case 2:
+//                            return value[index].displayRoverName == "Spirit"
+//                        default:
+//                            return true
+//                        }
+//
+//                        //print(list)
+//
 //                    }
 //
-//                    print(list)
 //
-//                }
-//
-//            })
+//                }).disposed(by: self.disposeBag)
                 
             let marsCell = cell as! TableViewCell
             
@@ -89,16 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
         }).disposed(by: disposeBag)
         
         
-        
-        self.selectRover.rx.selectedSegmentIndex.subscribe (onNext: { index1 in
-            print(index1)
-
-
-        }).disposed(by: disposeBag)
-        
-        
-        
-        
+        return list
         
     }
     
